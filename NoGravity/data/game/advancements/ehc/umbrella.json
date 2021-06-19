@@ -1,0 +1,29 @@
+{
+  "parent": "game:ehc/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:4}"
+    },
+    "title": {
+      "text": "I'm Marry Poppins, y'all!"
+    },
+    "description": {
+      "text": "Use an Umbrella"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bandage": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "bandage"
+    ]
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:area_effect_cloud",
+    "minecraft:arrow",
+    "minecraft:egg",
+    "minecraft:ender_pearl",
+    "minecraft:evoker_fangs",
+    "minecraft:experience_bottle",
+    "minecraft:eye_of_ender",
+    "minecraft:dragon_fireball",
+    "minecraft:fireball",
+    "minecraft:firework_rocket",
+    "minecraft:llama_spit",
+    "minecraft:potion",
+    "minecraft:shulker_bullet",
+    "minecraft:snowball",
+    "minecraft:small_fireball",
+    "minecraft:spectral_arrow",
+    "minecraft:wither_skull"
+  ]
+}

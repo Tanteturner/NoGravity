@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#game:animals",
+    "#game:monsters",
+    "minecraft:item",
+    "#game:projectiles"
+  ]
+}

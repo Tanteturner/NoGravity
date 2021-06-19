@@ -1,0 +1,29 @@
+{
+  "parent": "game:ehc/umbrella",
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text": "Smokin' High!"
+    },
+    "description": {
+      "text": "Use an Umbrella over a fire source!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bandage": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "bandage"
+    ]
+  ]
+}

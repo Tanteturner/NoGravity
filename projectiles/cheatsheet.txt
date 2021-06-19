@@ -1,0 +1,100 @@
+Aufbau der NBT-Daten
+
+{display:{Lore:[""]},RepairCost:0,durability:{Uses:Xs,maxUses:Xs,realUses:Xs,Sound:Xs,RepairCost:Xs,repairItems:[{nbt:Z,repair:Xs,cost:Xs}]}}
+
+X = Zahl (sofern man sehr große Zahlen braucht kann man das "s" auch weg lassen)
+Z = NBT-Daten des Reparaturmaterials
+
+display:{Lore:[""]} - sorgt dafür, dass die Haltbarkeit in der Lore angezeigt wird (der letzte Platz in der Lore wird ersetzt)
+
+RepairCost:0 - entfernt normale Reparatur mit dem Amboss
+
+durability:{ - die Liste der NBT-Tags des Datapacks
+
+Uses:Xs - die aktuelle Haltbarkeit des Items
+
+maxUses:Xs - die maximale Haltbarkeit des Items
+
+realUses:Xs - die "echte" Haltbarkeit des Items (unten ablesen)
+
+Unbreakable:1b - verhindert wenn vorhanden, dass das Item vollständig zerbricht (Haltbarkeit bis 0, aber das Item bleibt erhalten)
+
+Sound:Xs - die ID des breaking sounds (execute as @a[scores={cd_sound=X}] at @s run playsound [...]) Sollte diese nicht angegeben sein (einfach weg lassen) wird der normale breaking sound verwendet.
+
+RepairCost:Xs - die Reparaturkosten mit denen das Item startet (auf 0 setzen für immer gleiche Kosten, auf 1 setzen für Reparaturkosten wie im normalen Spiel)
+
+repairItems:[ - die Liste der Reparaturitems
+{
+nbt:Z - die NBT-Daten des Items (id, custom nbt-tags etc.)
+
+repair:Xs - die Anzahl an reparierten Benutzungen pro Item
+
+cost:Xs - die Kosten pro Reparatur, nicht steigend (auf 0 setzen, wenn man keine Kosten möchte / nur die normalen Kosten möchte)
+}
+]
+}
+
+Beispiel
+
+
+/give @s carrot_on_a_stick{CustomModelData:1,display:{Lore:[""]},RepairCost:0,durability:{Unbreakable:1b,Uses:60s,maxUses:60s,realUses:25s,Sound:1s}}
+
+
+/give @s wooden_axe{display:{Lore:[""]},RepairCost:0,durability:{Uses:10s,maxUses:10s,realUses:57s,Sound:1s,repairItems:[{nbt:{id:"minecraft:oak_log"},repair:10s,cost:3s}]}}
+
+
+
+
+Der Command gibt einem eine Holzaxt, die 10 Benutzungen hat und die Sound ID 1 hat.
+Die Axt lässt sich zudem mit einem Eichenholzstamm komplett reparieren (Es werden 10 Benutzungen repariert.)
+und die Reparatur kostet immer 3 Level.
+
+Durability abziehen / hinzufügen
+
+scoreboard players add @s cd_dMain X - fügt dem Item in der mainhand X Schaden zu (negativer Schaden gibt durability zurück)
+scoreboard players add @s cd_dOff X - fügt dem Item in der offhand X Schaden zu (negativer Schaden gibt durability zurück)
+
+! durability zurück geben funktioniert nur bis 1000 durability 
+(Lässt sich in der main.mcfunction auch anpassen,
+wenn einem das nicht reicht...)
+
+Real Uses
+
+#Wooden / Leather
+ Tools: 57
+ Helmet: 53
+ Chestplate: 78
+ Leggings: 73
+ Boots: 63
+
+#Stone / Chainmail
+ Tools: 129
+ Helmet: 163
+ Chestplate: 238
+ Leggings: 223
+ Boots: 193
+#Golden
+ Tools: 30
+ Helmet: 75
+ Chestplate: 110
+ Leggings: 103
+ Boots: 89
+#Iron
+ Tools: 248
+ Helmet: 163
+ Chestplate: 238
+ Leggings: 223
+ Boots: 193
+#Diamond
+ Tools: 1559
+ Helmet: 361
+ Chestplate: 526
+ Leggings: 493
+ Boots: 427
+#Special
+ Bow: 381
+ Coas: 23
+ Fishingrod: 62
+ Shears: 235
+ Crossbow: 323
+ Turtle Shell: 273

@@ -1,0 +1,29 @@
+{
+  "parent": "game:moon/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{CustomModelData:9}"
+    },
+    "title": {
+      "text": "From the stars!"
+    },
+    "description": {
+      "text": "Astroids are falling down on earth!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "moon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "moon"
+    ]
+  ]
+}

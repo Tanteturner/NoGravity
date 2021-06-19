@@ -1,0 +1,29 @@
+{
+  "parent": "game:moon/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{CustomModelData:11}"
+    },
+    "title": {
+      "text": "We'll be Counting Stars!"
+    },
+    "description": {
+      "text": "Cloudy with a chance of Shooting Stars!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "moon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "moon"
+    ]
+  ]
+}

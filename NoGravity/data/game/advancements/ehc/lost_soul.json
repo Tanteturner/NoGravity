@@ -1,0 +1,39 @@
+{
+  "parent": "game:ehc/welcome_to_hell",
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{CustomModelData:2}"
+    },
+    "title": {
+      "text": "SpoOOooooOky!"
+    },
+    "description": {
+      "text": "obtain a lost soul"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thorn_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{CustomModelData:2b}",
+            "items": [
+              "minecraft:command_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thorn_pot"
+    ]
+  ]
+}

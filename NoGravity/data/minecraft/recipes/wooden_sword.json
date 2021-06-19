@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OWO",
+    "W W",
+    "OWO"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "game:gravity_shard"
+    }
+  },
+  "result": {
+    "item": "minecraft:wooden_sword"
+  }
+}

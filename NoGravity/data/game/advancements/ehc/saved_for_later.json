@@ -1,0 +1,39 @@
+{
+  "parent": "game:ehc/burnt_witches",
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:2}"
+    },
+    "title": {
+      "text": "Saved for later! <3"
+    },
+    "description": {
+      "text": "Heart at the right spot!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thorn_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{CustomModelData:2}",
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thorn_pot"
+    ]
+  ]
+}

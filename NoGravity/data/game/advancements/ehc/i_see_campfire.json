@@ -1,0 +1,28 @@
+{
+  "parent": "game:ehc/danger_zone",
+  "display": {
+    "icon": {
+      "item": "minecraft:campfire"
+    },
+    "title": {
+      "text": "I see campfire!"
+    },
+    "description": {
+      "text": "Regenerate Health at a Campfire"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "i_see_campfire": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "i_see_campfire"
+    ]
+  ]
+}

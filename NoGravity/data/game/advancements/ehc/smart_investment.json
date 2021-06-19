@@ -1,0 +1,37 @@
+{
+  "parent": "game:ehc/flint",
+  "display": {
+    "icon": {
+      "item": "minecraft:stone_shovel"
+    },
+    "title": {
+      "text": "Smart Investment!"
+    },
+    "description": {
+      "text": "Flint well spent!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "stone_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stone_shovel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stone_shovel"
+    ]
+  ]
+}

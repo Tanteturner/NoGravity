@@ -1,0 +1,15 @@
+Orb Tags:
+#retreating
+- makes the ball call the orb/retrieve function
+
+#retreat_on_ground
+- adds itself the "retreating" tag when {inGround:1b}
+
+#retreat_on_hit
+- adds itself the "retreating" tag when hitting an enemy
+
+#destroy_foliage
+- destroys all blocks in foliage tag when passing through
+
+#destroy_glass
+- destroys glass and glass pane blocks

@@ -1,0 +1,37 @@
+{
+  "parent": "game:ehc/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text": "Ouch!"
+    },
+    "description": {
+      "text": "This will probably happen a lot of times..."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ouch": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "taken": {
+            "min": 1,
+            "max": 100
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ouch"
+    ]
+  ]
+}

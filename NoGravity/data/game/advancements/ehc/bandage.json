@@ -1,0 +1,29 @@
+{
+  "parent": "game:ehc/ouch",
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:5}"
+    },
+    "title": {
+      "text": "Much better!"
+    },
+    "description": {
+      "text": "Use a Zombie's Rotten Bandage"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bandage": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "bandage"
+    ]
+  ]
+}

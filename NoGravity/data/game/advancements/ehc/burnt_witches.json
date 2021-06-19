@@ -1,0 +1,39 @@
+{
+  "parent": "game:ehc/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:carrot_on_a_stick",
+      "nbt": "{CustomModelData:1}"
+    },
+    "title": {
+      "text": "That's a weird Potion..."
+    },
+    "description": {
+      "text": "Seems incredibly delicious!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "thorn_pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{CustomModelData:1}",
+            "items": [
+              "minecraft:carrot_on_a_stick"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "thorn_pot"
+    ]
+  ]
+}

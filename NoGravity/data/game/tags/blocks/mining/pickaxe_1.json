@@ -1,0 +1,31 @@
+{
+  "values": [
+    "minecraft:cobblestone",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:polished_granite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_andesite",
+    "minecraft:granite_stairs",
+    "minecraft:diorite_stairs",
+    "minecraft:andesite_stairs",
+    "minecraft:polished_granite_stairs",
+    "minecraft:polished_diorite_stairs",
+    "minecraft:polished_andesite_stairs",
+    "minecraft:granite_slab",
+    "minecraft:diorite_slab",
+    "minecraft:andesite_slab",
+    "minecraft:polished_granite_slab",
+    "minecraft:polished_diorite_slab",
+    "minecraft:polished_andesite_slab",
+    "minecraft:granite_wall",
+    "minecraft:diorite_wall",
+    "minecraft:andesite_wall",
+    "minecraft:lantern",
+    "minecraft:sea_lantern",
+    "minecraft:blast_furnace",
+    "minecraft:smoker",
+    "minecraft:furnace"
+  ]
+}

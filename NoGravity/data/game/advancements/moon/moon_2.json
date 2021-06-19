@@ -1,0 +1,29 @@
+{
+  "parent": "game:moon/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{CustomModelData:10}"
+    },
+    "title": {
+      "text": "Blood Moon!"
+    },
+    "description": {
+      "text": "Better stay at home tonight."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "moon": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "moon"
+    ]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "game:ehc/welcome_to_hell",
+  "display": {
+    "icon": {
+      "item": "minecraft:fire_charge",
+      "nbt": "{CustomModelData:5}"
+    },
+    "title": {
+      "text": "Return to Sender already..."
+    },
+    "description": {
+      "text": "Fireball-Tennis: \nIts fun - TRY IT!!"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tennis": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "tennis"
+    ]
+  ]
+}
