@@ -2,7 +2,7 @@ playsound minecraft:entity.evoker.cast_spell master @a
 #spawn an area effect cloud in front of your eyes
 #spawning it at ^ ^ ^1 makes the projectile exactly 1 block/s fast and the damage scales 100%
 #spawning it further away makes the projectile faster and scales the damage up.
-execute anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^0.5 {Tags:["p_anchor"]}
+execute anchored eyes run summon minecraft:marker ^ ^ ^0.5 {Tags:["p_anchor","tickkill"]}
 #now spawn the projectile with the p tag. aditional tags can be used:
 # - fragile: makes the projectile dissappear when hitting the ground
 # - bounce: makes the projectile bounce off walls / the ground

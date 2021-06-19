@@ -1,4 +1,4 @@
-execute facing entity @p[tag=calling_back] eyes run summon minecraft:area_effect_cloud ^ ^ ^1.5 {Tags:["p_anchor"]}
+execute facing entity @p[tag=calling_back] eyes run summon minecraft:marker ^ ^ ^1.5 {Tags:["p_anchor","tickkill"]}
 # orb executes p:motion
 data merge entity @s {inGround:0b,PierceLevel:100b,Silent:1b}
 function p:motion

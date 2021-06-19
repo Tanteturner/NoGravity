@@ -22,8 +22,8 @@ execute if data entity @s Item.tag.durability.RepairCost store result score @s c
 execute if data entity @s Item.tag.durability.RepairCost run scoreboard players operation @s cd_Uses *= #2 cd_Uses
 execute if data entity @s Item.tag.durability.RepairCost run scoreboard players add @s cd_Uses 1
 execute if data entity @s Item.tag.durability.RepairCost store result entity @s Item.tag.durability.RepairCost short 1 run scoreboard players get @s cd_Uses
-summon area_effect_cloud ~ ~ ~ {Tags:["random"]}
-execute store result score @s cd_Uses run data get entity @e[type=area_effect_cloud,tag=random,sort=nearest,limit=1] UUIDMost 0.0000000000001
+summon marker ~ ~ ~ {Tags:["random","tickkill"]}
+execute store result score @s cd_Uses run data get entity @e[type=marker,tag=random,sort=nearest,limit=1] UUIDMost 0.0000000000001
 scoreboard players operation @s cd_Uses %= #8 cd_Uses
 execute if score @s cd_Uses matches 3 at @s if block ~ ~-0.5 ~ minecraft:damaged_anvil run setblock ~ ~-0.5 ~ air replace
 execute if score @s cd_Uses matches 3 at @s if block ~ ~-0.5 ~ minecraft:chipped_anvil run setblock ~ ~-0.5 ~ damaged_anvil replace

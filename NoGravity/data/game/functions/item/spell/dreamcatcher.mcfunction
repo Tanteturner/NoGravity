@@ -8,7 +8,7 @@
 
 execute as @e[distance=..3,type=#game:projectiles] run data modify entity @s Motion set from entity @s Motion
 
-#execute anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^1 {Tags:["p_anchor"]}
+#execute anchored eyes run summon minecraft:marker ^ ^ ^1 {Tags:["p_anchor","tickkill"]}
 
 #to copy your UUID to the Entity, use this function and target the spawned entities:
 #execute at @e[tag=gravity_orb,tag=!p_setup,distance=..3,limit=1] run function p:uuid
