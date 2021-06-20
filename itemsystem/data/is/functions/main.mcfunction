@@ -1,0 +1,1 @@
+execute as @a if predicate is:hasinv run function is:replace

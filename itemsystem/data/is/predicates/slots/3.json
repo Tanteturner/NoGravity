@@ -1,0 +1,1 @@
+[{"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Inventory:[{Slot:3b}]}"}},{"condition": "minecraft:inverted","term": {"condition": "minecraft:entity_properties","entity": "this","predicate": {"nbt": "{Inventory:[{Slot:3b,tag:{Modified:1b}}]}"}}}]

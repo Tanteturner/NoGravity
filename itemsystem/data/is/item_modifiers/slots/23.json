@@ -1,0 +1,55 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{display:{Name:'{\"text\":\"Wooden Gravity Cube\",\"color\":\"light_purple\",\"italic\":false}'},HideFlags:31,RepairCost:9999,Unbreakable:1b,CustomModelData:1}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:wooden_sword\"}]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:furnace_smelt",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:wooden_sword\"}]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{BlockStateTag:{lit:\"false\"}}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Inventory:[{Slot:23b,id:\"minecraft:campfire\"}]}"
+        }
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{Modified:1b,CanPlaceOn:[\"#game:allblocks\"],HideFlags:16}",
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "player": {
+            "gamemode": "adventure"
+          }
+        }
+      }
+    ]
+  }
+]
