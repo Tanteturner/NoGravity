@@ -8,9 +8,9 @@ execute as @s[scores={sneak=1..}] run tag @e[type=arrow,tag=gravity_orb,limit=1,
 execute as @s[scores={sneak=1..}] run data merge entity @e[type=armor_stand,tag=gravity_orb,limit=1,sort=nearest] {ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:3}}]}
 
 #gravity cost
-scoreboard players remove @s gravity 4
-scoreboard players add @s[scores={sneak=1..}] gravity 2
-scoreboard players set @s gravity_regen_cd -30
+scoreboard players remove @s[gamemode=!creative] gravity 4
+scoreboard players add @s[scores={sneak=1..},gamemode=!creative] gravity 2
+scoreboard players set @s[gamemode=!creative] gravity_regen_cd -30
 
 #max age and max retreat time
 execute anchored eyes run scoreboard players set @e[type=arrow,tag=!p_setup,tag=gravity_orb,limit=1,sort=nearest,distance=..3] orb_max_age 20
