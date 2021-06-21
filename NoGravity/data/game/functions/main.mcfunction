@@ -3,7 +3,7 @@ execute as @a run function game:set_stats
 execute as @a at @s as @e[type=item,distance=..16,limit=2,tag=!noGravSet] at @s run data merge entity @s {NoGravity:1b,Tags:["noGravSet"]}
 
 execute as @a at @s run function game:player/gravity
-execute as @a at @s run function game:player/display_stamina
+execute as @a[gamemode=!creative] at @s run function game:player/display_stamina
 execute as @a[scores={gravity_regen_cd=0..}] at @s run function game:player/gravity_regen
 
 #item abilities
@@ -48,7 +48,8 @@ execute as @e[type=arrow,tag=gravity_orb,nbt={inBlockState:{Name:"minecraft:disp
 
 #out ot gravity sound
 execute as @a[scores={click=1..,gravity=..-1}] at @s run playsound minecraft:block.bubble_column.whirlpool_inside master @a ~ ~ ~ 0.4 0
-  execute as @a[scores={click=1..,gravity=..-1}] at @s run tag @s add out_of_gravity
+execute as @a[scores={click=1..,gravity=..-1}] at @s run tag @s add out_of_gravity
+tag @a[gamemode=creative,tag=out_of_gravity] remove out_of_gravity
 
 #input reset
 scoreboard players set @a[scores={click=1..}] click 0
