@@ -3,7 +3,7 @@ execute as @a run function game:set_stats
 execute as @a at @s as @e[type=item,distance=..16,limit=2,tag=!noGravSet] at @s run data merge entity @s {NoGravity: 1b, Tags: ["noGravSet"]}
 
 execute as @a at @s run function game:player/gravity
-execute as @a[gamemode=!creative] at @s run function game:player/display_stamina
+execute as @a[gamemode=!creative,gamemode=!spectator] at @s run function game:player/display_stamina
 execute as @a[scores={gravity_regen_cd=0..}] at @s run function game:player/gravity_regen
 
 #item abilities
