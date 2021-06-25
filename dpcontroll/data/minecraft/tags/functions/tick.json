@@ -1,7 +1,6 @@
 {
   "values":[
 	"game:main",
-	"uses:main",
 	"p:main",
   "game:endoftick"
   ]

@@ -1,7 +1,6 @@
 {
   "values":[
 	"game:load",
-  "uses:setup",
 	"p:load"
 ]
 }
