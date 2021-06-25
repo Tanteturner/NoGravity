@@ -1,14 +1,14 @@
 #save motion for bouncing
 tag @s[tag=ground] remove ground
-tag @s[nbt={inGround:1b}] add ground
-tag @s[nbt={OnGround:1b}] add ground
+tag @s[nbt={inGround: 1b}] add ground
+tag @s[nbt={OnGround: 1b}] add ground
 
 execute store result score @s[tag=!ground] pX run data get entity @s Motion[0] 1000000
 execute store result score @s[tag=!ground] pY run data get entity @s Motion[1] 1000000
 execute store result score @s[tag=!ground] pZ run data get entity @s Motion[2] 1000000
 
 #bounce
-execute as @s[tag=ground] run data merge entity @s {inGround:0b}
+execute as @s[tag=ground] run data merge entity @s {inGround: 0b}
 
 execute as @s[tag=ground,scores={pA=1..,pX=..-1}] unless block ~-0.9 ~ ~ #p:nonsolid run tag @s add bounceX
 execute as @s[tag=ground,scores={pA=1..,pX=1..}] unless block ~0.9 ~ ~ #p:nonsolid run tag @s add bounceX

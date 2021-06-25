@@ -15,6 +15,7 @@ execute as @s[tag=axe,scores={destroy_sound=1}] at @s run playsound minecraft:bl
 execute as @s[tag=pickaxe,scores={destroy_sound=1}] at @s run playsound minecraft:block.stone.break master @a ~ ~ ~ 0.3 0.4
 execute as @s[tag=shears,scores={destroy_sound=1}] at @s run playsound minecraft:block.grass.break master @a ~ ~ ~ 0.3 1.1
 
+
 scoreboard players set @s[scores={destroy_sound=4..}] destroy_sound 0
 
 #killing
@@ -22,7 +23,7 @@ scoreboard players set @s[scores={destroy_sound=4..}] destroy_sound 0
 execute as @s[tag=wooden_cube] unless entity @e[type=arrow,tag=gravity_orb,distance=..2] run kill @s
 
 execute as @s[scores={destroy_delay=..-1}] at @s run tp @e[type=item,distance=..1] @p[distance=..5]
-execute as @s[scores={destroy_delay=..-1}] at @s as @e[type=item,distance=..1] run data merge entity @s {PickupDelay:0}
+execute as @s[scores={destroy_delay=..-1}] at @s as @e[type=item,distance=..1] run data merge entity @s {PickupDelay: 0}
 kill @s[scores={destroy_delay=..-1}]
 
 

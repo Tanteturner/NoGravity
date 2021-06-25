@@ -1,5 +1,5 @@
 #execute if score @s gravity > @s health run scoreboard players operation @s gravity = @s health
-tag @s[tag=out_of_gravity,nbt={OnGround:1b}] remove out_of_gravity
+tag @s[tag=out_of_gravity,nbt={OnGround: 1b}] remove out_of_gravity
 
 effect give @s[tag=out_of_gravity] minecraft:weakness 1 0 false
 effect clear @s[tag=!out_of_gravity] minecraft:weakness

@@ -1,6 +1,6 @@
 execute as @a run function game:set_stats
 #items get nogravity
-execute as @a at @s as @e[type=item,distance=..16,limit=2,tag=!noGravSet] at @s run data merge entity @s {NoGravity:1b,Tags:["noGravSet"]}
+execute as @a at @s as @e[type=item,distance=..16,limit=2,tag=!noGravSet] at @s run data merge entity @s {NoGravity: 1b, Tags: ["noGravSet"]}
 
 execute as @a at @s run function game:player/gravity
 execute as @a[gamemode=!creative] at @s run function game:player/display_stamina
@@ -37,14 +37,14 @@ execute as @e[type=armor_stand,tag=block_breaker] at @s run function game:entity
 
 
 #movement
-execute as @a[scores={sneak=1..}] at @s rotated ~ 0 positioned ^ ^1 ^1 unless block ~ ~ ~ #game:nonsolid if block ~ ~-1 ~ #game:nonsolid unless entity @e[type=shulker,tag=crouch_shulker,distance=..1] run summon minecraft:shulker ~ ~ ~ {NoAI:1b,Silent:1b,Color:0,Tags:["crouch_shulker"],Invulnerable:1b,DeathLootTable:""}
+execute as @a[scores={sneak=1..}] at @s rotated ~ 0 positioned ^ ^1 ^1 unless block ~ ~ ~ #game:nonsolid if block ~ ~-1 ~ #game:nonsolid unless entity @e[type=shulker,tag=crouch_shulker,distance=..1] run summon minecraft:shulker ~ ~ ~ {NoAI: 1b, Silent: 1b, Color: 0, Tags: ["crouch_shulker"], Invulnerable: 1b, DeathLootTable: ""}
 execute as @e[type=shulker,tag=crouch_shulker] at @s unless entity @p[distance=..2] run kill @s
 execute as @a at @s if block ~ ~ ~ minecraft:lily_pad run effect give @s minecraft:jump_boost 1 6
 execute as @a at @s if block ~ ~-1 ~ minecraft:lily_pad run effect give @s minecraft:jump_boost 1 6
 execute as @a at @s if block ~ ~-2 ~ minecraft:lily_pad run effect give @s minecraft:jump_boost 1 6
 
 #blocks
-execute as @e[type=arrow,tag=gravity_orb,nbt={inBlockState:{Name:"minecraft:dispenser"}}] at @s run function game:item/orb/block/dispenser
+execute as @e[type=arrow,tag=gravity_orb,nbt={inBlockState: {Name: "minecraft:dispenser"}}] at @s run function game:item/orb/block/dispenser
 
 #out ot gravity sound
 execute as @a[scores={click=1..,gravity=..-1}] at @s run playsound minecraft:block.bubble_column.whirlpool_inside master @a ~ ~ ~ 0.4 0
