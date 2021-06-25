@@ -13,7 +13,7 @@ execute as @s[tag=retreat_on_ground] run function game:item/orb/behavior/retreat
 execute as @s[tag=retreat_on_hit] run function game:item/orb/behavior/retreat_on_hit
 
 execute as @s[tag=destroy_foliage] run function game:item/orb/behavior/destroy_foliage
-execute as @s[tag=block_breaker,nbt={inGround:1b},tag=!setup] run function game:item/orb/behavior/block_breaker
+execute as @s[tag=block_breaker,nbt={inGround: 1b},tag=!setup] run function game:item/orb/behavior/block_breaker
 
 execute as @s[tag=called_back] run function game:item/orb/behavior/called_back
 

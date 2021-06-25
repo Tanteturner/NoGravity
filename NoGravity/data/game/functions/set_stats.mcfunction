@@ -1,6 +1,6 @@
 #item ids
 execute as @a[scores={click=1..}] store result score @s clickID run data get entity @s SelectedItem.tag.CustomModelData
-execute as @a[scores={click=1..,clickID=0}] store result score @s clickID run data get entity @s Inventory[{Slot:-106b}].tag.CustomModelData
+execute as @a[scores={click=1..,clickID=0}] store result score @s clickID run data get entity @s Inventory[{Slot: -106b}].tag.CustomModelData
 
 
 execute as @a[scores={alive=..1}] run scoreboard players set @s gravity 20

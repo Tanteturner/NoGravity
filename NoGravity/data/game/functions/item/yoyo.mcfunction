@@ -1,6 +1,6 @@
 
-execute anchored eyes run summon minecraft:marker ^ ^ ^2 {Tags:["p_anchor","tickkill"]}
-execute anchored eyes run summon minecraft:arrow ^ ^ ^ {CustomName:'{"text":"Yo-Yo"}',Color:-1,Tags:["yoyo","p"],damage:4.0d,PierceLevel:100b,Silent:1b,Invulnerable:1b,NoGravity:1b,OwnerUUIDLeast:0,OwnerUUIDMost:0,Passengers:[{id:"minecraft:armor_stand",Tags:["yoyo","p"],NoGravity:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,Marker:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:4}}]}]}
+execute anchored eyes run summon minecraft:marker ^ ^ ^2 {Tags: ["p_anchor", "tickkill"]}
+execute anchored eyes run summon minecraft:arrow ^ ^ ^ {CustomName: '{"text":"Yo-Yo"}', Color: -1, Tags: ["yoyo", "p"], damage: 4.0d, PierceLevel: 100b, Silent: 1b, Invulnerable: 1b, NoGravity: 1b, OwnerUUIDLeast: 0, OwnerUUIDMost: 0, Passengers: [{id: "minecraft:armor_stand", Tags: ["yoyo", "p"], NoGravity: 1b, Invulnerable: 1b, Invisible: 1b, Glowing: 0b, Marker: 1b, ArmorItems: [{}, {}, {}, {id: "minecraft:carrot_on_a_stick", Count: 1b, tag: {CustomModelData: 4}}]}]}
 
 execute anchored eyes run data modify entity @e[type=armor_stand,tag=yoyo,tag=!p_setup,distance=..3,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
 
