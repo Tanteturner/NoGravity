@@ -2,6 +2,7 @@
   "values":[
 	"game:load",
   "uses:setup",
-	"p:load"
+	"p:load",
+  "is:init"
 ]
 }
