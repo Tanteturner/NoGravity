@@ -54,3 +54,6 @@ tag @a[gamemode=creative,tag=out_of_gravity] remove out_of_gravity
 #input reset
 scoreboard players set @a[scores={click=1..}] click 0
 scoreboard players set @a[scores={sneak=1..}] sneak 0
+
+#get hats (temporary)
+function game:gethat
