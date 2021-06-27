@@ -1,1 +1,1 @@
-say init
+forceload add 0 0
