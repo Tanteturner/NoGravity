@@ -16,6 +16,8 @@ execute as @e[type=armor_stand,tag=bomb] at @s run function game:entity/bomb
 execute as @a[scores={click=1..,clickID=4}] at @s run function game:item/yoyo
 execute as @e[type=arrow,tag=yoyo] at @s run function game:entity/yoyo
 
+execute as @a[tag=onGround,scores={click=1..,clickID=7}] at @s run function game:item/forrest_gauntlet/use
+
 execute as @a at @s run function game:item/spell/dreamcatcher
 
 #dropping items
@@ -30,6 +32,9 @@ scoreboard players reset @a[scores={craft_w_cube=1..}] craft_w_cube
 execute as @e[type=arrow,tag=p,tag=gravity_orb] at @s run function game:item/orb/behavior/usual
 
 execute as @e[type=armor_stand,tag=p,tag=gravity_orb] at @s unless entity @e[type=arrow,tag=p,tag=gravity_orb,distance=..1] run kill @s
+
+#gauntlet behaviors
+execute as @a[scores={gaunt_boost_time=1..}] run function game:item/forrest_gauntlet/boost
 
 #entity behavior
 execute as @e[type=armor_stand,tag=block_breaker] at @s run function game:entity/block_breaker
@@ -54,6 +59,11 @@ tag @a[gamemode=creative,tag=out_of_gravity] remove out_of_gravity
 #input reset
 scoreboard players set @a[scores={click=1..}] click 0
 scoreboard players set @a[scores={sneak=1..}] sneak 0
+
+#Gliding
+execute as @a[tag=glide] at @s run function game:player/glide/glide
+execute as @a[tag=onGround] run function game:player/glide/stop
+execute as @a[tag=climbing] run function game:player/glide/stop
 
 #get hats (temporary)
 function game:gethat
