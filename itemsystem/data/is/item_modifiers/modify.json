@@ -7,19 +7,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{Inventory:[{Slot:9b,id:\"minecraft:campfire\"}]}",
-            "stepping_on": {
-              "biome": "minecraft:end_highlands",
-              "feature": "buried_treasure",
-              "dimension": "minecraft:the_nether",
-              "light": {
-                "light": -1
-              },
-              "smokey": true
-            },
-            "player": {
-              "gamemode": "survival"
-            }
+            "nbt": "{Inventory:[{Slot:9b,id:\"minecraft:campfire\"}]}"
           }
         }
       ]
