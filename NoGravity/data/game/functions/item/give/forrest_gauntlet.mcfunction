@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Forrest Gauntlet","color":"light_purple","italic":false}'},CustomModelData:7} 1
