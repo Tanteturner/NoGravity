@@ -2,6 +2,7 @@
   "values":[
 	"game:main",
 	"p:main",
+  "is:main",
   "game:endoftick"
   ]
 }

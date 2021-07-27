@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{BlockStateTag:{lit:\"false\"}}",
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{SelectedItem:{id:\"minecraft:campfire\"}}"
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{CanPlaceOn:[\"#game:allblocks\"],HideFlags:16}"
+    }
+  ]

@@ -1,6 +1,7 @@
 {
   "values":[
 	"game:load",
-	"p:load"
+	"p:load",
+  "is:init"
 ]
 }
