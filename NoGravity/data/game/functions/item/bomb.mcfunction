@@ -1,7 +1,7 @@
 playsound minecraft:entity.creeper.primed master @a ~ ~ ~ 1 2
 
 execute anchored eyes run summon minecraft:marker ^ ^0.2 ^1 {Tags: ["p_anchor", "tickkill"]}
-execute anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName: '{"text":"Bomb"}', Tags: ["bomb", "p"], Invisible: 1b, Silent: 1b, Invulnerable: 1b, ArmorItems: [{}, {}, {}, {id: "minecraft:carrot_on_a_stick", Count: 1b, tag: {CustomModelData: 3}}]}
+execute anchored eyes run summon minecraft:armor_stand ^ ^ ^ {CustomName: '{"text":"Bomb"}', Tags: ["bomb", "p"], Invisible: 1b, Silent: 1b, Invulnerable: 1b, ArmorItems: [{}, {}, {}, {id: "minecraft:carrot_on_a_stick", Count: 1b, tag: {CustomModelData: 4}}]}
 
 
 
