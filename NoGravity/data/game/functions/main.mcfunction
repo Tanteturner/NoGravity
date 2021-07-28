@@ -10,7 +10,7 @@ execute as @a[scores={gravity_regen_cd=0..}] at @s run function game:player/grav
 execute as @a[tag=!out_of_gravity,scores={click=1..,clickID=1}] at @s run function game:item/spell/throw_cube
 execute as @a[scores={click=1..,clickID=2}] at @s run function game:item/orb/retrieve
 
-execute as @a[scores={click=1..,clickID=3}] at @s run function game:item/bomb
+execute as @a[scores={click=1..,clickID=4}] at @s run function game:item/bomb
 execute as @e[type=armor_stand,tag=bomb] at @s run function game:entity/bomb
 
 execute as @a[scores={click=1..,clickID=4}] at @s run function game:item/yoyo
