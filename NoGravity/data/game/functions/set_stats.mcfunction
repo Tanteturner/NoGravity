@@ -13,6 +13,12 @@ effect clear @a[scores={alive=..1}] levitation
 #ball amount
 #execute as @a store result score @s balls run clear @s minecraft:carrot_on_a_stick{CustomModelData:1} 0
 
+tag @a remove onGround
+execute as @a at @s unless block ~ ~-0.0001 ~ #game:nonsolid run tag @s add onGround
+
+tag @a remove climbing
+execute as @a at @s if block ~ ~ ~ #minecraft:climbable run tag @s add climbing
+
 #height zone
 scoreboard players set @a[predicate=game:height/crystal_caves] heightZone -3
 scoreboard players set @a[predicate=game:height/deep_caves] heightZone -2

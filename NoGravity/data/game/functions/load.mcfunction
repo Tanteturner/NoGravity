@@ -31,6 +31,9 @@ scoreboard objectives add orb_max_age dummy
 scoreboard objectives add orb_retreat dummy
 scoreboard objectives add orb_max_retreat dummy
 
+#forrest gauntlet
+scoreboard objectives add gaunt_boost_time dummy
+
 #location stats
 scoreboard objectives add heightZone dummy
 
