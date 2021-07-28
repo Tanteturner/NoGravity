@@ -23,6 +23,9 @@
 		"minecraft:peony",
 		"minecraft:red_mushroom",
 		"minecraft:brown_mushroom",
-		"minecraft:cobweb"
+		"minecraft:cobweb",
+		"minecraft:bamboo_sapling",
+		"minecraft:sugar_cane",
+		"#minecraft:saplings"
 	]
 }

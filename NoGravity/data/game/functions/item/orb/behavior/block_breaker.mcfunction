@@ -40,3 +40,11 @@ execute as @s[scores={found_block=0}] store result score @s found_block if block
 execute as @s[scores={found_block=0}] store result score @s found_block if block ~-0.05 ~ ~ #game:mining/shears positioned ~-1 ~ ~ run function game:entity/block_breaker/summon_shears
 execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~ ~0.05 #game:mining/shears positioned ~ ~ ~1 run function game:entity/block_breaker/summon_shears
 execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~ ~-0.05 #game:mining/shears positioned ~ ~ ~-1 run function game:entity/block_breaker/summon_shears
+
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~ ~ #game:mining/hand run function game:entity/block_breaker/summon_hand
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~0.05 ~ #game:mining/hand positioned ~ ~1 ~ run function game:entity/block_breaker/summon_hand
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~-0.05 ~ #game:mining/hand positioned ~ ~-1 ~ run function game:entity/block_breaker/summon_hand
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~0.05 ~ ~ #game:mining/hand positioned ~1 ~ ~ run function game:entity/block_breaker/summon_hand
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~-0.05 ~ ~ #game:mining/hand positioned ~-1 ~ ~ run function game:entity/block_breaker/summon_hand
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~ ~0.05 #game:mining/hand positioned ~ ~ ~1 run function game:entity/block_breaker/summon_hand
+execute as @s[scores={found_block=0}] store result score @s found_block if block ~ ~ ~-0.05 #game:mining/hand positioned ~ ~ ~-1 run function game:entity/block_breaker/summon_hand

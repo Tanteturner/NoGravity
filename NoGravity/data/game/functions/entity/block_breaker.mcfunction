@@ -14,6 +14,7 @@ execute as @s[tag=shovel,scores={destroy_sound=1}] at @s run playsound minecraft
 execute as @s[tag=axe,scores={destroy_sound=1}] at @s run playsound minecraft:block.wood.break master @a ~ ~ ~ 0.3 0.4
 execute as @s[tag=pickaxe,scores={destroy_sound=1}] at @s run playsound minecraft:block.stone.break master @a ~ ~ ~ 0.3 0.4
 execute as @s[tag=shears,scores={destroy_sound=1}] at @s run playsound minecraft:block.grass.break master @a ~ ~ ~ 0.3 1.1
+execute as @s[tag=hand,scores={destroy_sound=1}] at @s run playsound minecraft:block.wool.break master @a ~ ~ ~ 0.5 1.1
 
 
 scoreboard players set @s[scores={destroy_sound=4..}] destroy_sound 0
@@ -32,5 +33,6 @@ kill @s[scores={destroy_delay=..-1}]
 #game:mining/shovel
 #game:mining/pickaxe
 #game:mining/pickaxe_2
+#game:mining/hand
 
 #holz, alle

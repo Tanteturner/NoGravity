@@ -3,6 +3,7 @@
     "#game:mining/axe",
     "#game:mining/shovel",
     "#game:mining/pickaxe_1",
+    "#game:mining/hand",
     "minecraft:iron_ore",
     "minecraft:coal_ore",
     "minecraft:lapis_ore"
