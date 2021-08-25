@@ -7,7 +7,7 @@ tag @a[tag=setidup] remove setidup
 
 execute as @a[predicate=game:blocks/healing_at_campfire] at @s run effect give @s minecraft:regeneration 1 2
 
-#
+execute as @e[type=item_frame,tag=lumina] at @s run function game:block/lumina/slowclock
 
 
 schedule function game:slowclock 1s

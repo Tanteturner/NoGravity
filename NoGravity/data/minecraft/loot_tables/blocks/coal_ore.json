@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:item_frame",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{EntityTag:{Invulnerable:1b,Invisible:1b,Fixed:1b,Tags:[\"lumina_setup\"]},CustomModelData:1,display:{Name:'{\"text\":\"Lumina\",\"color\":\"aqua\",\"italic\":false}'}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -43,5 +43,8 @@ scoreboard objectives add max_gravity dummy
 scoreboard objectives add add_gravity dummy
 scoreboard objectives add gravity_regen_cd minecraft.custom:play_time
 
+#blocks
+scoreboard objectives add lumina_level dummy
+
 #starting slow clocks
 function #game:slowclock
