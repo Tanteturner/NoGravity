@@ -39,9 +39,6 @@ execute as @a[scores={gaunt_boost_time=1..}] run function game:item/forrest_gaun
 #entity behavior
 execute as @e[type=armor_stand,tag=block_breaker] at @s run function game:entity/block_breaker
 
-#blocks
-execute as @e[type=item_frame,tag=lumina_setup] at @s run function game:block/lumina/set
-
 #movement
 execute as @a[scores={sneak=1..}] at @s rotated ~ 0 positioned ^ ^1 ^1 unless block ~ ~ ~ #game:nonsolid if block ~ ~-1 ~ #game:nonsolid unless entity @e[type=shulker,tag=crouch_shulker,distance=..1] run summon minecraft:shulker ~ ~ ~ {NoAI: 1b, Silent: 1b, Color: 0, Tags: ["crouch_shulker"], Invulnerable: 1b, DeathLootTable: ""}
 execute as @e[type=shulker,tag=crouch_shulker] at @s unless entity @p[distance=..2] run kill @s

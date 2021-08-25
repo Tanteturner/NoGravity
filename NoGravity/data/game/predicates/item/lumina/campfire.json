@@ -1,0 +1,29 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "game:item/lumina/campfire_d"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "game:item/lumina/campfire_u"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "game:item/lumina/campfire_w"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "game:item/lumina/campfire_e"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "game:item/lumina/campfire_s"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "game:item/lumina/campfire_n"
+          }
+    ]
+}

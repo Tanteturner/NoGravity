@@ -1,0 +1,19 @@
+{
+    "criteria": {
+            "requirement": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:item_frame"
+                    ],
+                    "nbt": "{CustomModelData:1}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "game:block/lumina/set"
+    }
+}
+  

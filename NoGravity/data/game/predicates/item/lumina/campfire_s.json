@@ -1,0 +1,26 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Rotation:[180f,0f]}"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 1,
+      "predicate": {
+        "block": {
+          "blocks": [
+            "minecraft:campfire"
+          ],
+          "state": {
+            "lit": false
+          }
+        }
+      }
+    }
+  ]
+  
