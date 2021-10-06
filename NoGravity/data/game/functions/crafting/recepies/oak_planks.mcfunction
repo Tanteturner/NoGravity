@@ -1,0 +1,1 @@
+execute if data storage crafting recepie[{id:"minecraft:oak_log"}] unless data storage crafting recepie[1] run item replace block ~ ~ ~ container.15 with oak_planks 4

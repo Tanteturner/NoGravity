@@ -49,6 +49,9 @@ scoreboard objectives add lumina_level dummy
 #crafting
 scoreboard objectives add crafting dummy
 
+team add RemoveName
+team modify RemoveName nametagVisibility never
+
 forceload add 0 0
 fill -1 0 -1 1 3 1 bedrock
 setblock 0 1 0 yellow_shulker_box
