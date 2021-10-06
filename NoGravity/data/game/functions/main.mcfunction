@@ -46,6 +46,9 @@ execute as @a at @s if block ~ ~ ~ minecraft:lily_pad run effect give @s minecra
 execute as @a at @s if block ~ ~-1 ~ minecraft:lily_pad run effect give @s minecraft:jump_boost 1 6
 execute as @a at @s if block ~ ~-2 ~ minecraft:lily_pad run effect give @s minecraft:jump_boost 1 6
 
+execute as @e[type=marker,tag=crafter] at @s if entity @p[distance=..8] run function game:crafting/tick
+
+
 #blocks
 execute as @e[type=arrow,tag=gravity_orb,nbt={inBlockState: {Name: "minecraft:dispenser"}}] at @s run function game:item/orb/block/dispenser
 
